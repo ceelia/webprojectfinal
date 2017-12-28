@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+  <title> tips para viajes</title>
+  <link rel="stylesheet" type="text/css" href="css/newprojectstyles.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script src='js/bootstrap.min.js'></script>
+
+</head>
+
+<body>
+
+  <div class= "container">
+
+  <h1>TIPS PARA VIAJES: TRAVELUX</h1>
+
+  <div class="slideshow-container">
+
+   <div class="mySlides fade">
+    <!--<div class="numbertext">1 / 3</div>-->
+    <img src="images/playa.jpg">
+    <div class="text">TIPS Y CONSEJOS</div>
+  </div>
+
+  <div class="mySlides fade">
+    <!--<div class="numbertext">2 / 3</div>-->
+    <img src="images/segovia.jpg">
+    <div class="text">TIPS Y CONSEJOS</div>
+  </div>
+
+  <div class="mySlides fade">
+    <!--<div class="numbertext">3 / 3</div>-->
+    <img src="images/prado.jpg">
+    <div class="text">TIPS Y CONSEJOS</div>
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 4 seconds
+  }
+  </script>
+
+  <p>¿Te vas de viaje y no sabes a donde ir? ¿Tampoco sabes que llevarte?
+  En X podemos ayudarte y aconsejarte oara tener el viaje perfecto
+
+
+Siempre es dificil organizar viajes por primera vez, por lo que nosotras recomendamos esta pequeña guía.
+Dale click a cualquiera de los links de abajo y encontraras nuestras ultimas recomendaciones
+
+Esperamos que os sea de ayuda</p>
+
+  <h2>INDICE</h2>
+
+  <div>
+    <ul>
+
+      <li><a href="Lista para la maleta.html">LISTA PARA LA MALETA</a></li>
+      <li><a href="Zonas de playa.html">ZONAS DE PLAYA</a></li>
+      <li><a href="Zonas de montaña.html">ZONAS DE MONTAÑA</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+
+    </ul>
+  </div>
+</div>
+ </body>
+
+</HTML>
